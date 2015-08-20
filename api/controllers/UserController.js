@@ -11,7 +11,7 @@ module.exports = {
 		if(user.name == "test" && user.password == 'test')
 		res.redirect('/mypage')
 		else{
-			res.json(501,{sucess:false,err:'user or password not matching'})
+			res.json(501,{sucess:false})
 		}
 		// res.json({sucess:true,})
 	}

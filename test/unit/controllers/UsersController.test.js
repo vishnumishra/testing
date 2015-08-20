@@ -16,9 +16,7 @@ describe('UsersController', function() {
         .send({ name: 'vishnu', password: 'test' })
         .expect(501)
         .expect('Content-Type', /json/)
-        .expect('sucess',false,done)
-        // .expect('err',"user or password not matching",done)
-        // .expect('json',{sucess:false,err:'user or password not matching'},done)
+        .expect('{\n  "sucess": false\n}',false,done)
     });
   });
 
